@@ -163,7 +163,6 @@ async def play(_, message: Message):
                             InlineKeyboardButton(
                                 text="Watch On YouTube",
                                 url=f"{url}"),
-                            )
                         ],
                         [
                             InlineKeyboardButton(
@@ -183,7 +182,6 @@ async def play(_, message: Message):
                             InlineKeyboardButton(
                                 text="Watch On YouTube",
                                 url=f"https://youtube.com"),
-                            )
                         ],
                         [
                             InlineKeyboardButton(
@@ -235,7 +233,6 @@ async def play(_, message: Message):
                         InlineKeyboardButton(
                             text="Watch On YouTube",
                             url=f"{url}"),
-                        )
                         ],
                         [
                             InlineKeyboardButton(
