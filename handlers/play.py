@@ -98,7 +98,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing** sounds...")
+    lel = await message.reply("🔄 **Sabar Jomblo** Tunggu!")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -249,7 +249,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **queued** at position {position}!",
+        caption=f"#⃣ Jodohmu ada di **queued** ! {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
